@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Symplify\LatteToTwigConverter\DependencyInjection;
+namespace Symplify\LatteToTwigConverter\HttpKernel;
 
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
