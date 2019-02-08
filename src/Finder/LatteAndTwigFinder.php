@@ -50,7 +50,8 @@ final class LatteAndTwigFinder
         $twigFileFinder = Finder::create()
             ->files()
             ->in($sourceDirectory)
-            ->name('#\.' . $suffix . '$#');
+            ->name('#\.' . $suffix . '$#')
+            ->sortByName();
 
         return $this->finderSanitizer->sanitize($twigFileFinder);
     }
